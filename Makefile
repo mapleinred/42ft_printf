@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 SRCS	= ft_itoa.c ft_pinthex.c ft_ppointer.c ft_printf.c ft_putchar.c \
-	  ft_putstr.c ft_strdup.c ft_strlen.c ft_uitoa.c
+	  ft_putstr.c ft_strlen.c ft_uitoa.c
 	  
 
 OBJS	= ${SRCS:.c=.o}
