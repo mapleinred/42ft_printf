@@ -6,7 +6,7 @@
 /*   By: xzhang <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 21:13:33 by xzhang            #+#    #+#             */
-/*   Updated: 2023/09/24 15:00:10 by xzhang           ###   ########.fr       */
+/*   Updated: 2023/09/24 15:28:27 by xzhang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,25 +58,28 @@ If n is less than16, you use putchar to print the corresponding
 hexadecimal digit from the hex array, and increment 
 the count variable to keep track of the number of characters printed.
 
-If n is greater than or equal to 16,enter the else block. Here, perform 
-a recursive call to phexapointer with n/16, which represents the high-order 
-digit of the hexadecimal number.
+If n is greater than or equal to 16,enter the else block. Here, 
+perform a recursive call to phexapointer with n/16, which represents 
+the high-order digit of the hexadecimal number.
 
 also perform a recursive call to ft_phexapointer with n % 16, 
 which represents the low-order digit of the hexadecimal number.
 
-The recursion continues until n becomes less than 16, and the function returns 
-from the recursive calls.
+The recursion continues until n becomes less than 16, and the 
+function returns from the recursive calls.
 
-The counts from the recursive calls are accumulated in the count variable.
+The counts from the recursive calls are accumulated 
+in the count variable.
 
 Finally, the function returns the total count of characters printed.
 
-In the ft_ppointer function, you first check if the input pointer n is equal to 0. 
-If it is,write "(nil)" to the standard output and return 5, 
+In the ft_ppointer function, you first check if the input pointer 
+n is equal to 0.If it is,write "(nil)" to the standard output and return 5, 
 which is the length of "(nil)".
 
-Otherwise,print "0x" to indicate the start of the hexadecimal representation, and 
-call ft_phexapointer(n) to print the actual hexadecimal digits and accumulate the count.
-add 2 to the count for the "0x" prefix and return the total count of characters printed.
+Otherwise,print "0x" to indicate the start of the hexadecimal 
+representation, and call ft_phexapointer(n) to print the actual 
+hexadecimal digits and accumulate the count.add 2 to the count for 
+the "0x" prefix and return the total 
+count of characters printed.
 */
